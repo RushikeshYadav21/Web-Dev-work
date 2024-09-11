@@ -1,0 +1,188 @@
+.header{
+    display: flex ;
+    z-index: 100;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(238, 236, 236);
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.ytlogo{
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger{
+    height: 24px;
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.center-section{
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+}
+
+
+#search{
+    margin-left: -3px;
+    position: relative;
+
+   }
+
+.hovertext{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -7px;
+    font-size: 13px;
+    padding: 5px;
+    background-color: gray;
+    opacity: 0;
+    border-radius: 11%;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+
+#search:hover .hovertext{
+    opacity: 1;
+}
+
+
+.seachbar{
+    height: 38px;
+    width: 0;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    
+}
+
+.seachbar::placeholder{
+    font-family: Roboto,arial;
+    font-size:  16px;
+}
+
+.mic{
+    
+    height: 24px;
+    border-radius: 50px;
+    border: none;
+}
+.voice-button{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+margin-top: 15px;
+margin-left: -7px;
+font-size: 13px;
+padding: 5px;
+background-color: gray;
+opacity: 0;
+border-radius: 11%;
+transition: opacity 0.5s;
+pointer-events: none;
+white-space: nowrap ;
+
+}
+
+#mic:hover .voice-button{
+    opacity: 1;
+}
+
+#mic{
+    position: relative;
+    border: none;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #fef8f8f3;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+
+.search{
+    height: 32px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.right-section{
+    display: flex;
+    position: relative;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+}
+
+.upload{
+    height :24px;
+    cursor: pointer;
+    
+}
+.apps{
+    height :24px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.notifications{
+    height :24px;
+    cursor: pointer;
+}
+.notifications-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    background-color: rgb(225, 6, 6);
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-radius: 50%;
+    right: -4px;
+    top:-3px;
+}
+.pro-pic{
+    height :24px;
+    border-radius: 50%;
+    cursor: pointer;
+}

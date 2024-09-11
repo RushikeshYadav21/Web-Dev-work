@@ -1,0 +1,91 @@
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+@media (max-width :700px){
+
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (min-width :2000px){
+
+    .video-grid{
+        grid-template-columns: 1fr  1fr 1fr 1fr;
+    }
+}
+
+
+.thumbnail{
+    width:  100%;
+    position: relative;
+}
+
+.time{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    bottom:12px;
+    right: 5px;
+}
+
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.icon{
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: top;
+    
+}
+
+.desc{
+    width: 200px;
+    margin-top: 0px;
+}
+
+.profilepic{
+    vertical-align: top;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin:2px;
+}
+
+.Tpic {
+    width: 100%;
+}
+.Video-title
+{
+    margin-top: 0;
+    display: inline-block;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.owner ,.Views
+{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(133, 127, 127);
+    margin-bottom: 2px;
+    margin-top: 0;
+}
